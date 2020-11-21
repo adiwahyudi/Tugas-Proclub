@@ -1,6 +1,6 @@
 # Melakukan Input untuk club
-A = input('Klub A : ')
-B = input('Klub B : ')
+klub_a = input('Klub A : ')
+klub_b = input('Klub B : ')
 
 # Membuat Array
 arr = []
@@ -8,24 +8,24 @@ arr = []
 i = 1 
 
 # Input Pertama
-siA,siB = input(f'Pertandingan {i} : ').split()
-siA = int(siA)
-siB = int(siB)
+si_a,si_b = input(f'Pertandingan {i} : ').split()
+si_a = int(si_a)
+si_b = int(si_b)
 
 # Melakukan pengecekan untuk inputan dan setelah itu melakukan perulangan 
-while (siA) >= 0 and (siB) >= 0:
+while (si_a) >= 0 and (si_b) >= 0:
     # Percabangan dan hasilnya dimasukan kedalam array
-    if siA > siB:
-        arr.append(A)
-    elif siA < siB:
-        arr.append(B)
+    if si_a > si_b:
+        arr.append(klub_a)
+    elif si_a < si_b:
+        arr.append(klub_b)
     else:
         arr.append('Draw')
     i += 1
     # Melakukan input lagi
-    siA,siB = input(f'Pertandingan {i} : ').split()
-    siA = int(siA)
-    siB = int(siB)
+    si_a,si_b = input(f'Pertandingan {i} : ').split()
+    si_a = int(si_a)
+    si_b = int(si_b)
 
 # Print Array
 x = 1
